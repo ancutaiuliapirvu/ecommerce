@@ -1,12 +1,18 @@
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
 function ProductsCard() {
     return(
         <div className="products-card">
-            Products Card
-            <img/>
-            <p>Nume produs</p>
-            <p>Pret</p>
-            <button>Detalii</button>
-            <button>Add</button>
+            <Card bg='primary' style={{width: '25%'}}>
+                <Card.Img />
+                <Card.Body>
+                    <Card.Title>Nume</Card.Title>
+                    <Card.Text>Price</Card.Text>
+                    <Button>Detalii</Button>
+                    <Button>Add to cart</Button>
+                </Card.Body>
+            </Card>
         </div>
     )
 }
