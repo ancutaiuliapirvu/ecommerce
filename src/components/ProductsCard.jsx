@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
+
 //TODO: transform mock data to actual data
 //TODO: add actual product image
 //TODO: add icon instead of add to cart text

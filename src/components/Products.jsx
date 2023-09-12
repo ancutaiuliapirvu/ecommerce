@@ -3,15 +3,19 @@ import ProductsList from './ProductsList';
 import { useEffect, useState } from "react";
 
 
+
 function Products() {
 
     const [productsFromApi, setProductsFromApi] = useState({});
 
+
     useEffect(() => {
         fetch('https://dummyjson.com/products/')
-        .then(res => res.json())
-        .then(data => setProductsFromApi(data))
+            .then(res => res.json())
+            .then(data => setProductsFromApi(data))
     }, [])
+
+   
 
     return (
         <div className="products">
