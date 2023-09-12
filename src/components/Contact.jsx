@@ -1,3 +1,6 @@
+//TODO: formular contact
+
+
 function Contact() {
     return(
         <div className="contact">

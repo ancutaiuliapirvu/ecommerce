@@ -6,6 +6,7 @@ import Products from './components/Products';
 import About from './components/About';
 import Contact from './components/Contact';
 import Cart from './components/Cart';
+import ProductDetails from './components/ProductDetails'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
     <div className="App">
       <Header />
         <Routes>
-          <Route path='/home' element={<Home/>} />
-          <Route path='/products' element={<Products/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/products' exact element={<Products/>}/>
+          <Route path='/products/details' element={<ProductDetails/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/cart' element={<Cart/>} />

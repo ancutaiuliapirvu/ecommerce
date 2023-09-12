@@ -13,8 +13,6 @@ function Products() {
         .then(data => setProductsFromApi(data))
     }, [])
 
-    console.log('productsFromApi', productsFromApi);
-
     return (
         <div className="products">
             Products list below
