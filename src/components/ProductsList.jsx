@@ -1,4 +1,5 @@
 import ProductsCard from "./ProductsCard";
+import './ProductsList.css'
 
 function ProductsList(props) {
   const { productsList } = props;
@@ -8,7 +9,7 @@ function ProductsList(props) {
   }
 
   return (
-    <div>
+    <div className="products-list">
       {productsList && productsList.products.map((product) => (
         <ProductsCard key={product.id} oneProduct={product} />
       ))}

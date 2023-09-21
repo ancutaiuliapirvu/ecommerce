@@ -16,15 +16,8 @@ function Products() {
     }, [])
 
 
-    let arrNews=[{id: 1, title: 'I'}, {id: 2, title: 'e'}, {id: 3, title: 't'}]
-
-    const favoriteNewsNumber = arrNews.length;
-
-    localStorage.setItem('favoriteNumber', favoriteNewsNumber);
-
     return (
         <div className="products">
-            Products list below
             <ProductsList productsList={productsFromApi}/>
         </div>
     )

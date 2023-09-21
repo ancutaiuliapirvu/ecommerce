@@ -1,0 +1,18 @@
+.products-card {
+    width: 30%;
+    margin-top: 5rem;
+    margin-left: 2.4rem;
+}
+
+.card-bootstrap {
+    background-color: #d7d3f4;
+}
+
+.product-image {
+    height: 16.5rem;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: center;
+}
