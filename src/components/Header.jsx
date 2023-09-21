@@ -1,9 +1,17 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
+import Badge from 'react-bootstrap/Badge'
+
 
 //TODO: Replace cart button to cart icon button
 
-function Header() {
+function Header(props) {
+
+    const {favoritesNumber} = props;
+
+    const favoritesFromLocalStorage = localStorage.getItem('favoriteNumber');
+    console.log('favorites LS', favoritesFromLocalStorage)
+
     return (
         <div className='header'>
             <div className="logo">Logo</div>
@@ -30,6 +38,11 @@ function Header() {
                 <Link to='/cart'>
                     <button>Cart</button>
                 </Link>
+                <div className="notification-number">
+                    <Badge pill bg="primary" style={{width: '10px', marginTop: '30px'}}>
+                        {favoritesNumber}
+                    </Badge>
+                </div>
             </div>
         </div>
     )
